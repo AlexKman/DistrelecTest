@@ -5,7 +5,7 @@ import ProductCard from "./ProductCard";
 export default function Cart() {
   return (
     <div class="cart-container">
-      <h3>Shopping Cart</h3>
+      <h3 class="cart-header">Shopping Cart</h3>
       <ProductCard></ProductCard>
     </div>
   );
