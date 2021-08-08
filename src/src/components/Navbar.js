@@ -23,6 +23,14 @@ export default function Navigationbar() {
             </Link>
           </Nav.Link>
         </Nav>
+        <Nav>
+          <Nav.Link>
+            <Link className="nav-link" to="/cart">
+              <i class="fas fa-shopping-cart"></i>
+              Cart
+            </Link>
+          </Nav.Link>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
