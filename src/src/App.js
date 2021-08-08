@@ -6,15 +6,17 @@ import "./App.scss";
 
 function App() {
   return (
-    <Router>
-      <Navigationbar></Navigationbar>
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-        <Route exact path="/cart" component={Cart}></Route>
-      </Switch>
-    </Router>
+    <div class="App">
+      <Router>
+        <Navigationbar></Navigationbar>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/cart" component={Cart}></Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
