@@ -6,7 +6,11 @@ export default function Navigationbar() {
   return (
     <Navbar expand="lg" sticky="top" bg="dark" variant="dark">
       <Navbar.Brand>
-        <img alt="logo" class="navbarImg" />
+        <img
+          alt="logo"
+          src={process.env.PUBLIC_URL + "/images/Distrelec.png"}
+          class="navbarImg"
+        />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
