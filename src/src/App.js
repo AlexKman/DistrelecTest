@@ -2,6 +2,7 @@ import Navigationbar from "./components/Navbar.js";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Cart from "./components/Cart.js";
+import "./App.scss";
 
 function App() {
   return (
