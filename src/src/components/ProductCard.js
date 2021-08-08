@@ -4,8 +4,8 @@ import "./ProductCard.scss";
 export default function ProductCard() {
   return (
     <div class="card">
-      <div class="row no-gutters">
-        <div class="col-auto">
+      <div class="row no-gutters card-inner-container">
+        <div class="col-auto ">
           <img
             src={process.env.PUBLIC_URL + "/images/DistrelecPart.jpg"}
             class="product-image"
