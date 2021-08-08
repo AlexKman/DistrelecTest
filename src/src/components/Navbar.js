@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
@@ -21,6 +21,28 @@ export default function Navigationbar() {
               <i class="fas fa-home"></i>
               Home
             </Link>
+          </Nav.Link>
+
+          <Nav.Link>
+            <NavDropdown title="Services" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">
+                Post and Packaging Costs
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Quoting</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">
+                Returns, Repairs
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav.Link>
+          <Nav.Link>
+            <NavDropdown title="New" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action4">New Products</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">
+                RND New Arrivals
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav.Link>
         </Nav>
         <Nav>
