@@ -46,7 +46,7 @@ export default function Navigationbar() {
         </Nav>
         <Nav>
           <Nav.Link>
-            <Link className="nav-link" to="/cart">
+            <Link className="nav-link" to="">
               <i class="fas fa-shopping-cart"></i>
               Cart
             </Link>
