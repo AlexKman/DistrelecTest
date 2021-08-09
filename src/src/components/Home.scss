@@ -1,8 +1,21 @@
-.container {
+.home-container {
   background-color: #edf0fc;
+  width: 70vw;
+  align-self: center;
+  margin-top: 50px;
 }
 
 .carousel-item {
   height: 32rem;
   background: yellow;
+  color: white;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
 }
