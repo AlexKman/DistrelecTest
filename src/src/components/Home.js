@@ -1,27 +1,29 @@
 import React from "react";
-import "./Home.scss";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import data from "../data.json";
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   return (
-    <div className="home-container">
-      <div className="carousel slide">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <div className="container">
-              <h1>Lorem Ipsum. Blah Blah blah.</h1>
-              <p>
-                Lorem Ipsum. Blah Blah blah.Lorem Ipsum. Blah Blah blah. Lorem
-                Ipsum. Blah Blah blah.Lorem Ipsum. Blah Blah blah. Lorem Ipsum.
-                Blah Blah blah.Lorem Ipsum. Blah Blah blah. Lorem Ipsum. Blah
-                Blah blah.Lorem Ipsum. Blah Blah blah.{" "}
-              </p>
-              <a href="#" className="bt btn-lg btn-primary">
-                Click me
-              </a>
+    <div className="container">
+      <Slider {...settings}>
+        {data.carouselData.map((obj) => {
+          return (
+            <div>
+              {" "}
+              <img src={obj.productImageUrl} alt={obj.code} />
             </div>
-          </div>
-        </div>
-      </div>
+          );
+        })}
+      </Slider>
     </div>
   );
 }
