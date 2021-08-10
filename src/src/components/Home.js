@@ -11,7 +11,7 @@ export default function Home() {
     autoplay: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
   };
   return (
     <div className="container">
@@ -26,6 +26,7 @@ export default function Home() {
                 src={obj.productImageUrl}
                 alt={obj.code}
               />
+              <p>{obj.typeName}</p>
             </div>
           );
         })}

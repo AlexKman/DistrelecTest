@@ -1,5 +1,13 @@
+.container {
+  padding-top: 20em;
+}
+
 @media (max-width: 800px) {
   .carousel-image {
     width: 100px;
   }
+}
+
+.carousel-image {
+  margin: 0 auto;
 }
